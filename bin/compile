@@ -14,8 +14,10 @@ DEFAULT_CACHE="node_modules bower_components"
 
 ### Configure directories
 
-echo "First Param = $1"
-BUILD_DIR=$(cd ${1:-}; cd 'current'; pwd)
+echo "$0 first"
+echo "$1 second"
+echo "$2 third"
+BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
