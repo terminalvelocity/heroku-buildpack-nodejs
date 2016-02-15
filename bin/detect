@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
-echo "ZERO $0"
-echo "ONE $1"
-if [ -f $1/package.json ]; then
+
+if [ -f current/package.json ]; then
   echo "Node.js"
   exit 0
 fi
